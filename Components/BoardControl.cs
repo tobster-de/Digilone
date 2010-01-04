@@ -60,7 +60,6 @@ namespace Components
                 if (_whiteMarble != value)
                 {
                     _whiteMarble = value;
-                    //Invalidate();
                 }
             }
         }
@@ -78,7 +77,6 @@ namespace Components
                 if (_blackMarble != value)
                 {
                     _blackMarble = value;
-                    //Invalidate();
                 }
             }
         }
@@ -225,9 +223,8 @@ namespace Components
         {
             InitializeComponent();
             _movementDir = Direction.None;
-            _currentPlayer = MarbleColor.White;
+            _currentPlayer = MarbleColor.Black;
             _dragChain = new List<BoardCoordinates>();
-            //Board.Instance.InitStandardBegin();
         }
 
         #region Private Implementation
@@ -452,7 +449,6 @@ namespace Components
                 return;
             }
             BoardCoordinates pointCoord = PointToCoordinates(e.Location);
-            //_startCoord = pointCoord;
             if (_board == null || pointCoord != null && pointCoord.Valid)
             {
                 if (HandleFieldEnter(pointCoord))

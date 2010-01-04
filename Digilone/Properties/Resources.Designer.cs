@@ -60,13 +60,6 @@ namespace Digilone.Properties {
             }
         }
         
-        internal static System.Drawing.Bitmap abalone_back_neu {
-            get {
-                object obj = ResourceManager.GetObject("abalone_back_neu", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
         internal static System.Drawing.Bitmap abalone_back_neu2 {
             get {
                 object obj = ResourceManager.GetObject("abalone_back_neu2", resourceCulture);
